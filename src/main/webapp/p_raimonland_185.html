@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IDS房产咨询服务-185</title>
+<!-- Bootstrap -->
+<link href="./resource/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="./resource/jQuery/js/jquery-2.1.3.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./resource/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Font-Awesome -->
+<link href="./resource/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<!-- jQuery UI -->
+<script src="./resource/jQuery/js/jquery-ui.min.js"></script>
+<link href="./resource/jQuery/js/jquery-ui.min.css" rel="stylesheet">
+
+<style>
+body{
+	font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+	background-color: #dedef8;
+}
+</style>
+
+<script>
+   $(function(){
+		$("#myCarousel").carousel('cycle');
+   });
+   
+   $(function() {
+	    $( "#dialog" ).dialog({
+	      autoOpen: false,
+	      show: {effect: "blind", duration: 1000},
+	      hide: {effect: "explode",duration: 1000}
+	    });
+	    $( "#contactUs" ).click(function() {
+	    	if($("#bs-example-navbar-collapse-1").is(":hidden")){
+		    	$("#dialog").dialog("open");
+	    	}else{
+	    		if($("#bottonToggle").is(":hidden")){
+					$("#dialog").dialog("open");
+		    	}else{
+		    		$("#bottonToggle").click();
+			    	$("#dialog").dialog("open");
+		    	}
+	    	}
+	    });
+  });
+</script>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button id="bottonToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span> 
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">IDS</a>
+				<p class="navbar-text">海外房产咨询服务有限公司(泰国)</p>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li ><a href="index.html">首页 <span class="sr-only">(current)</span></a></li>
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">泰国房产
+							<span class="caret"></span>
+					    </a>
+					    <ul class="dropdown-menu" role="menu">
+							<li class="active"><a href="p_raimonland.html"><i class="fa fa-home"></i>&nbsp;Raimonland</a></li>
+							<li><a href="#">Sansiri</a></li>
+							<li><a href="#">Origin</a></li>
+							<li><a href="#">Land&House</a></li>
+							<li><a href="p_theGlobalTop.html"><i class="fa fa-home"></i>&nbsp;Global Top</a></li>
+							<li><a href="#">Matrix</a></li>
+							<li><a href="#">Tulip Group</a></li>
+							<li><a href="#">Nova Group</a></li>
+						</ul></li>
+					<li><a href="company.html">公司信息</a></li>
+					<li><a href="thailand.html">关于泰国</a></li>
+					<li><a id="contactUs">联系我们</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<div class="btn-group" role="group" style="padding-top:10px;">
+						<a href="#" target="_blank"> <i class="fa fa-facebook-square fa-2x"></i></a> 
+						<a href="#" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+						<a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+						<a href="#" target="_blank"><i class="fa fa-youtube-square fa-2x"></i></a>
+						<a href="#" target="_blank"><i class="fa fa-weibo fa-2x"></i></a>
+					</div>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<nav class="navbar navbar-default navbar-fixed-bottom">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<ul class="nav navbar-nav navbar-right">
+					<li><h6 class="navbar-text">&nbsp; &nbsp; &nbsp;©2014 International Delivery&Service (IDS) Co.Ltd</h6></li>
+				</ul>
+			</div>
+			
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+				<ul class="nav navbar-nav navbar-right">
+					<li><h6 class="navbar-text">电话: (+66) 96 268 6109 | 电子邮件: idspenny@gmail.com</h6></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-8" style="background-color: #dedef8; padding-right:0px; padding-left:0px;"> <!-- remove padding -->
+				<div id="myCarousel" class="carousel slide">
+					<!-- 轮播(Carousel)指标 -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+						<li data-target="#myCarousel" data-slide-to="3"></li>
+						<li data-target="#myCarousel" data-slide-to="4"></li>
+						<li data-target="#myCarousel" data-slide-to="5"></li>
+						<li data-target="#myCarousel" data-slide-to="6"></li>
+					</ol>
+					<!-- 轮播(Carousel)项目 -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="./resource/images/project/raimonland/185/185_1.jpg" alt="First slide">
+							<div class="container">
+								<div class="carousel-caption">Pattaya</div>
+							</div>
+						</div>
+						<div class="item">
+							<img src="./resource/images/project/raimonland/185/185_2.jpg" alt="Second slide">
+							<div class="container">
+								<div class="carousel-caption">
+					              <h1>Example headline.</h1>
+					              <p class="lead">Cras justo odio, dapibus ac faci<a class="btn btn-large btn-primary" href="#">Learn more</a></p>
+					            </div>
+					        </div>
+						</div>
+						<div class="item">
+							<img src="./resource/images/project/raimonland/185/185_3.jpg" alt="Third slide">
+						</div>
+						<div class="item">
+							<img src="./resource/images/project/raimonland/185/185_4.jpg" alt="Fourth slide">
+						</div>
+						<div class="item">
+							<img src="./resource/images/project/raimonland/185/185_5.jpg" alt="Fifth slide">
+						</div>
+						<div class="item">
+							<img src="./resource/images/project/raimonland/185/185_6.jpg" alt="Sixth slide">
+						</div>
+						<div class="item">
+							<img src="./resource/images/project/raimonland/185/185_7.jpg" alt="Seventh slide">
+						</div>
+					</div>
+					<!-- 轮播(Carousel)导航 -->
+					<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+					<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+				</div>
+			</div>
+			
+			<div class="col-md-4" style="background-color: #dedef8; padding-right:0px; padding-left:0px;"><!-- remove padding -->
+				<div class="container-fluid" style="padding-right:0px; padding-left:0px;">
+					<div class="col-md-12" style="background-color: #dedef8; padding:50px 5px 15px 20px;">
+						<h2>Raimonland</h2>
+						<h4>185Rajadamri</h4>
+						<p>185拉差丹里豪华公寓位于曼谷市心脏地带，矗立在摩天大楼与天空轻轨Skytrains之间，卓显现代时尚本质，
+						不仅靠近葱郁的Lumpini公园，而且可方便前往素坤逸大道与是隆街/沙吞区， 离BTS仅数步之遥，轻松可进入高档精品商店和大型商场，
+						距曼谷中央商务区仅几分钟路程，邻近众多泰国最优秀的学校和大学。计划的共管式公寓开发将让业主可尽情欣赏露披尼公园和曼谷皇家运动俱乐部的壮丽景色。</p>
+						</br>
+						<p>2007 年初，RaimonLand集团完成了对曼谷CBD 中心4莱永久产权场地的收购，现在185是Rajadamri路唯一的永久产权公寓。</p>
+						</br>
+						<p>185由曼谷最优秀的团队建筑师，景观设计师和园林设计师打造，这些建筑师将毕生精力投入到打造曼谷最高端的生活杰作。 
+						大型落地窗让你欣赏到壮观的城市景观和美丽的Lumpini公园景色，大型碳化硅双层玻璃落地窗保证了绝对的透明功能， 
+						同时房间的保温防热尖端水冷式中央空调系统为你提供了终极的舒适和环保性。</p>
+						</br>
+						</br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="dialog" title="IDS房产咨询服务有限公司">
+		<address>
+		  </br>
+		  <i class="fa fa-home">&nbsp;&nbsp;779/7 PrachaUthit Road
+		  	&nbsp;&nbsp;Samsannok,Huaikwang, Bangkok, Thailand
+		  </i>
+		  </br>
+		  <i class="fa fa-user">&nbsp;&nbsp;Penny</i></br>
+		  <i class="fa fa-phone">&nbsp;&nbsp;(+66) 90 893 7517</i></br>
+		  <i class="fa fa-weixin">&nbsp;&nbsp;IDS_TH</i></br>
+		  <i class="fa fa-envelope-o">&nbsp;&nbsp;<a href="mailto:#">yingfangxie1@gmail.com</a></i>
+		</address>
+	</div>
+</body>
+</html>

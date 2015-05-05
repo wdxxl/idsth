@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IDS房产咨询服务-Unixx</title>
+<!-- Bootstrap -->
+<link href="./resource/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="./resource/jQuery/js/jquery-2.1.3.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./resource/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Font-Awesome -->
+<link href="./resource/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<!-- jQuery UI -->
+<script src="./resource/jQuery/js/jquery-ui.min.js"></script>
+<link href="./resource/jQuery/js/jquery-ui.min.css" rel="stylesheet">
+
+<style>
+body{
+	font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+	background-color: #dedef8;
+}
+</style>
+
+<script>
+   $(function(){
+		$("#myCarousel").carousel('cycle');
+   });
+   
+   $(function() {
+	    $( "#dialog" ).dialog({
+	      autoOpen: false,
+	      show: {effect: "blind", duration: 1000},
+	      hide: {effect: "explode",duration: 1000}
+	    });
+	    $( "#contactUs" ).click(function() {
+	    	if($("#bs-example-navbar-collapse-1").is(":hidden")){
+		    	$("#dialog").dialog("open");
+	    	}else{
+	    		if($("#bottonToggle").is(":hidden")){
+					$("#dialog").dialog("open");
+		    	}else{
+		    		$("#bottonToggle").click();
+			    	$("#dialog").dialog("open");
+		    	}
+	    	}
+	    });
+  });
+</script>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button id="bottonToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span> 
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">IDS</a>
+				<p class="navbar-text">海外房产咨询服务有限公司(泰国)</p>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li ><a href="index.html">首页 <span class="sr-only">(current)</span></a></li>
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">泰国房产
+							<span class="caret"></span>
+					    </a>
+						<ul class="dropdown-menu" role="menu">
+							<li class="active"><a href="p_raimonland.html"><i class="fa fa-home"></i>&nbsp;Raimonland</a></li>
+							<li><a href="#">Sansiri</a></li>
+							<li><a href="#">Origin</a></li>
+							<li><a href="#">Land&House</a></li>
+							<li><a href="p_theGlobalTop.html"><i class="fa fa-home"></i>&nbsp;Global Top</a></li>
+							<li><a href="#">Matrix</a></li>
+							<li><a href="#">Tulip Group</a></li>
+							<li><a href="#">Nova Group</a></li>
+						</ul></li>
+					<li><a href="company.html">公司信息</a></li>
+					<li><a href="thailand.html">关于泰国</a></li>
+					<li><a id="contactUs">联系我们</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<div class="btn-group" role="group" style="padding-top:10px;">
+						<a href="#" target="_blank"> <i class="fa fa-facebook-square fa-2x"></i></a> 
+						<a href="#" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+						<a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+						<a href="#" target="_blank"><i class="fa fa-youtube-square fa-2x"></i></a>
+						<a href="#" target="_blank"><i class="fa fa-weibo fa-2x"></i></a>
+					</div>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<nav class="navbar navbar-default navbar-fixed-bottom">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<ul class="nav navbar-nav navbar-right">
+					<li><h6 class="navbar-text">&nbsp; &nbsp; &nbsp;©2014 International Delivery&Service (IDS) Co.Ltd</h6></li>
+				</ul>
+			</div>
+			
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+				<ul class="nav navbar-nav navbar-right">
+					<li><h6 class="navbar-text">电话: (+66) 96 268 6109 | 电子邮件: idspenny@gmail.com</h6></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-8" style="background-color: #dedef8; padding-right:0px; padding-left:0px;"> <!-- remove padding -->
+				<div id="myCarousel" class="carousel slide">
+					<!-- 轮播(Carousel)指标 -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+						<li data-target="#myCarousel" data-slide-to="3"></li>
+						<li data-target="#myCarousel" data-slide-to="4"></li>
+						<li data-target="#myCarousel" data-slide-to="5"></li>
+						<li data-target="#myCarousel" data-slide-to="6"></li>
+					</ol>
+					<!-- 轮播(Carousel)项目 -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="./resource/images/project/raimonland/Unixx/Unixx1.jpg" alt="First slide">
+							<div class="container">
+								<div class="carousel-caption">Pattaya</div>
+							</div>
+						</div>
+						<div class="item">
+							<img src="./resource/images/project/raimonland/Unixx/Unixx2.jpg" alt="Second slide">
+							<div class="container">
+								<div class="carousel-caption">
+					              <h1>Example headline.</h1>
+					              <p class="lead">Cras justo odio, dapibus ac faci<a class="btn btn-large btn-primary" href="#">Learn more</a></p>
+					            </div>
+					        </div>
+						</div>
+						<div class="item">
+							<img src="./resource/images/project/raimonland/Unixx/Unixx3.jpg" alt="Third slide">
+						</div>
+						<div class="item">
+							<img src="./resource/images/project/raimonland/Unixx/Unixx4.jpg" alt="Fourth slide">
+						</div>
+						<div class="item">
+							<img src="./resource/images/project/raimonland/Unixx/Unixx5.jpg" alt="Fifth slide">
+						</div>
+						<div class="item">
+							<img src="./resource/images/project/raimonland/Unixx/Unixx6.jpg" alt="Sixth slide">
+						</div>
+						<div class="item">
+							<img src="./resource/images/project/raimonland/Unixx/Unixx7.jpg" alt="Seventh slide">
+						</div>
+					</div>
+					<!-- 轮播(Carousel)导航 -->
+					<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+					<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+				</div>
+			</div>
+			
+			<div class="col-md-4" style="background-color: #dedef8; padding-right:0px; padding-left:0px;"><!-- remove padding -->
+				<div class="container-fluid" style="padding-right:0px; padding-left:0px;">
+					<div class="col-md-12" style="background-color: #dedef8; padding:50px 5px 15px 20px;">
+						<h2>Raimonland</h2>
+						<h4>UNIXX</h4>
+						<p>芭堤雅UNIXX高层海景公寓，由泰国首屈一指的开发商莱蒙置地房产公司开发，位于芭堤雅著名的帕答纳山，
+						占地面积超过7莱（约10200平方米），公寓高耸在南芭堤雅的上空，形成了一道亮丽的风景线。</p>
+						</br>
+						<p>UNIXX高层海景公寓，由两栋高达42层及46层的大楼组成，包括单间公寓以及单卧室和双卧室公寓，
+						从每一个阳台都可眺望到秀美无边的大型花园，还有美丽的芭堤雅与中天海滩景观。</p>
+						</br>
+						<p>该项目已于2012年动工，预计在2016年6月竣工，其得天独厚的地理位置，
+						和“度假村风格”的建筑设计以及经济实惠的价格，将成为芭堤雅性价比最高的新型公寓之一。</p>
+						</br>
+						</br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="dialog" title="IDS房产咨询服务有限公司">
+		<address>
+		  </br>
+		  <i class="fa fa-home">&nbsp;&nbsp;779/7 PrachaUthit Road
+		  	&nbsp;&nbsp;Samsannok,Huaikwang, Bangkok, Thailand
+		  </i>
+		  </br>
+		  <i class="fa fa-user">&nbsp;&nbsp;Penny</i></br>
+		  <i class="fa fa-phone">&nbsp;&nbsp;(+66) 90 893 7517</i></br>
+		  <i class="fa fa-weixin">&nbsp;&nbsp;IDS_TH</i></br>
+		  <i class="fa fa-envelope-o">&nbsp;&nbsp;<a href="mailto:#">yingfangxie1@gmail.com</a></i>
+		</address>
+	</div>
+</body>
+</html>
